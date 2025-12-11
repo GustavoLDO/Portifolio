@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+body {
+    /* Tente buscar o arquivo DIRETAMENTE na raiz da pasta public */
+    background-image : linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('/venom.png'); 
+    
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
