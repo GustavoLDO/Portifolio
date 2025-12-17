@@ -48,20 +48,20 @@ function Home() {
                 </div>
             </section>
 
-            {/* --- SEÇÃO SOBRE --- */}
+           
             <section className="relative z-10 bg-black/20 backdrop-blur-[2px] py-10">
                 <Sobre />
             </section>
 
-            {/* --- SEÇÃO TECNOLOGIAS --- */}
-            <section className="py-20 bg-gradient-to-b from-transparent via-black/60 to-transparent backdrop-blur-sm">
+            
+            <section className="py-20  bg-gradient-to-b from-transparent via-black/60 to-transparent backdrop-blur-sm">
                 <CardTec />
             </section>
 
-            {/* --- SEÇÃO JORNADA (TIMELINE) --- */}
+            
             <section className="relative py-20 bg-transparent">
-                {/* Linha divisória sutil */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-zinc-700 to-transparent" />
+                
+                
                 
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="flex flex-col items-center mb-20">
