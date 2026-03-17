@@ -1,10 +1,12 @@
 /** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
+/** biome-ignore-all lint/correctness/useUniqueElementIds: <explanation> */
 import React from "react";
+import { SiGithub, SiLinkedin } from "react-icons/si"; // Importando ícones
 
 function Sobre() {
   return (
-    <section className="relative w-full max-w-7xl mx-auto py-16 md:py-24 px-4 sm:px-6 lg:px-8 font-outfit overflow-hidden">
-      {/* Background Decorativo - Ajustado para não quebrar o scroll no mobile */}
+    <section id="sobre" className="relative w-full max-w-7xl mx-auto py-16 md:py-24 px-4 sm:px-6 lg:px-8 font-outfit overflow-hidden">
+      {/* Background Decorativo */}
       <div className="absolute -top-10 -left-10 w-48 h-48 md:w-72 md:h-72 bg-purple-600/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none"></div>
       
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16 items-start">
@@ -21,7 +23,6 @@ function Sobre() {
             <div className="w-16 md:w-24 h-1.5 md:h-2 bg-cyan-500 rounded-full"></div>
           </div>
 
-          {/* Texto com tamanhos fluidos */}
           <div className="space-y-6 md:space-y-8 text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed font-normal">
             <p>
               Olá! Eu sou o <span className="text-white font-bold border-b-2 border-cyan-500/30">Gustavo</span>, um desenvolvedor Full Stack focado em criar soluções que unem a robustez do processamento de dados com interfaces de alto nível.
@@ -34,7 +35,7 @@ function Sobre() {
             </p>
           </div>
 
-          {/* Pilares de Trabalho - 1 coluna no mobile, 3 no desktop */}
+          {/* Pilares de Trabalho */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 pt-4">
             <div className="p-6 rounded-2xl bg-zinc-900/60 border border-zinc-800 hover:border-cyan-500/50 transition-all group">
               <h4 className="text-cyan-400 text-lg md:text-xl font-bold mb-2">Performance</h4>
@@ -52,7 +53,6 @@ function Sobre() {
         </div>
 
         {/* LADO DIREITO: Info Card */}
-        {/* Adicionado 'order-1' no mobile para os dados aparecerem antes do texto longo, ou 'order-2' se preferir manter abaixo */}
         <div className="lg:col-span-5 lg:sticky lg:top-28 order-1 lg:order-2">
           <div className="relative bg-zinc-900/50 backdrop-blur-xl border border-white/10 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-10 overflow-hidden shadow-2xl">
             <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl"></div>
@@ -88,9 +88,30 @@ function Sobre() {
               </li>
             </ul>
 
-            <button type="button" className="w-full mt-8 md:mt-12 py-4 md:py-5 bg-white text-black text-base md:text-lg font-black rounded-xl md:rounded-2xl hover:bg-cyan-400 transition-all active:scale-95 shadow-lg">
-              Descarregar CV
-            </button>
+            {/* NOVA SEÇÃO: Redes Sociais no lugar do botão único */}
+            <div className="mt-10 md:mt-14 space-y-4">
+              <p className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] font-bold text-center">Conecte-se comigo</p>
+              <div className="flex gap-4">
+                <a 
+                  href="https://github.com/GustavoLDO" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="flex-1 flex items-center justify-center gap-3 py-4 bg-zinc-800 text-white rounded-xl hover:bg-zinc-700 transition-all active:scale-95 border border-white/5"
+                >
+                  <SiGithub className="text-xl" />
+                  <span className="font-bold">GitHub</span>
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/gustavolemosoliveira/" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="flex-1 flex items-center justify-center gap-3 py-4 bg-[#0077b5] text-white rounded-xl hover:brightness-110 transition-all active:scale-95 shadow-lg shadow-blue-900/20"
+                >
+                  <SiLinkedin className="text-xl" />
+                  <span className="font-bold">LinkedIn</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 

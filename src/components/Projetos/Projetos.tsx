@@ -31,6 +31,21 @@ const meusProjetos = [
     tags: ["Django", "Python", "Redis", "TailWind"],
     link: "https://github.com/GustavoLDO/ToDo_List.git",
   },
+  {
+    id: 5,
+    nome: "Pokedex",
+    descricao: "Uma pokedex completa com busca e filtragem de pokémons, via terminal, utilizando a API pública PokeAPI.",
+    tags: ["Spring Boot", "PostgreSQL" ],
+    link: "https://github.com/GustavoLDO/Pokedex.git",
+  },
+  {
+    id: 6,
+    nome: "MegaSena",
+    descricao: "Projeto de simulação de apostas da MegaSena, permitindo aos usuários escolher números e verificar resultados.",
+    tags: ["PHP", "CSS", "HTML"],
+    link: "https://github.com/GustavoLDO/AtividadeMegaSena.git",
+  }
+
 ];
 
 function Projetos() {
