@@ -44,6 +44,13 @@ const meusProjetos = [
     descricao: "Projeto de simulação de apostas da MegaSena, permitindo aos usuários escolher números e verificar resultados.",
     tags: ["PHP", "CSS", "HTML"],
     link: "https://github.com/GustavoLDO/AtividadeMegaSena.git",
+  },
+  {
+    id: 7,
+    nome: "Banco Spring Boot",
+    descricao: "Aplicação backend desenvolvida em Java com Spring Boot para gerenciamento de endereços.",
+    tags: ["Spring Boot", "PostgreSQL"],
+    link: "https://github.com/GustavoLDO/Banco-Spring-Boot.git",
   }
 
 ];
