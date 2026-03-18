@@ -27,7 +27,7 @@ Para testar o projeto localmente, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/GustavoLDO/Portifolio.git](https://github.com/GustavoLDO/Portifolio.git)
+    git clone https://github.com/GustavoLDO/Portifolio.git
     ```
 
 2.  **Acesse o diretório:**
