@@ -30,47 +30,52 @@ const timelineData = [
 
 function TimeLine() {
     return (
-        <section className="py-20 font-outfit text-white">
-            <div className="max-w-4xl mx-auto px-6">
+        <section className="py-12 font-outfit text-white">
+            <div className="max-w-3xl mx-auto px-6">
                 
                 <ul className="relative">
-                    {/* Linha Central com Gradiente - Identidade do Portfólio */}
-                    <div className="absolute left-0 sm:left-1/2 transform sm:-translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-400/50 via-purple-500/50 to-transparent"></div>
+                    {/* Linha Central com Gradiente */}
+                    <div className="absolute left-0 sm:left-1/2 transform sm:-translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-400/30 via-purple-500/30 to-transparent"></div>
 
                     {timelineData.map((item, index) => (
                         <li
                             key={index}
-                            className={`mb-16 relative w-full sm:w-1/2 flex
-                          ${index % 2 === 0 ? "sm:pr-12 sm:left-0 sm:justify-end" : "sm:pl-12 sm:left-1/2 sm:justify-start"}`}
+                            className={`mb-12 relative w-full sm:w-1/2 flex
+                          ${index % 2 === 0 ? "sm:pr-10 sm:left-0 sm:justify-end" : "sm:pl-10 sm:left-1/2 sm:justify-start"}`}
                         >
-                            
-
-                            {/* Card com Bordas Refinadas */}
+                            {/* Ponto de Conexão Menor */}
                             <div
-                                className={`group relative p-6 rounded-2xl bg-zinc-900/40 backdrop-blur-md 
-                                transition-all duration-300 hover:scale-[1.02]
-                                border border-white/5 hover:border-cyan-500/30
-                                shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-cyan-500/10
-                                w-[calc(100%-2rem)] sm:w-auto ml-8 sm:ml-0
+                                className="absolute w-3 h-3 rounded-full bg-zinc-950 
+                            left-0 top-1/2 transform -translate-y-1/2 
+                            sm:left-1/2 sm:-translate-x-1/2 
+                            border border-cyan-400 z-10 shadow-[0_0_8px_rgba(34,211,238,0.4)]"
+                            ></div>
+
+                            {/* Card com Fontes Reduzidas */}
+                            <div
+                                className={`group relative p-5 rounded-xl bg-zinc-900/40 backdrop-blur-md 
+                                transition-all duration-300 hover:scale-[1.01]
+                                border border-white/5 hover:border-cyan-500/20
+                                shadow-lg w-[calc(100%-2rem)] sm:w-auto ml-8 sm:ml-0
                                 ${index % 2 === 0 ? "sm:text-right" : "sm:text-left"}`}
                             >
-                                {/* Detalhe de Brilho Superior no Hover */}
-                                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                {/* Brilho Superior sutil */}
+                                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
-                                <time className="block text-base font-bold leading-none text-cyan-400 mb-2 tracking-widest uppercase italic">
+                                <time className="block text-xs font-bold leading-none text-cyan-400 mb-2 tracking-[0.2em] uppercase italic">
                                     {item.ano}
                                 </time>
                                 
-                                <h3 className="text-2xl font-black text-white mt-1 mb-3 tracking-tight group-hover:text-purple-400 transition-colors uppercase">
+                                <h3 className="text-lg font-bold text-white mt-1 mb-2 tracking-tight group-hover:text-purple-400 transition-colors uppercase">
                                     {item.titulo}
                                 </h3>
                                 
-                                <p className="text-lg font-normal text-zinc-400 leading-relaxed group-hover:text-zinc-200 transition-colors">
+                                <p className="text-sm font-normal text-zinc-400 leading-relaxed group-hover:text-zinc-200 transition-colors">
                                     {item.descricao}
                                 </p>
 
-                                {/* Detalhe na Quina - Roxo do Portfólio */}
-                                <div className={`absolute bottom-2 ${index % 2 === 0 ? 'left-2' : 'right-2'} w-8 h-8 border-b-2 border-purple-500/20 rounded-br-xl`}></div>
+                                {/* Detalhe na Quina Menor */}
+                                <div className={`absolute bottom-1.5 ${index % 2 === 0 ? 'left-1.5' : 'right-1.5'} w-6 h-6 border-b-2 border-purple-500/10 rounded-br-lg`}></div>
                             </div>
                         </li>
                     ))}
