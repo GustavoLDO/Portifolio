@@ -1,6 +1,6 @@
 /** biome-ignore-all lint/a11y/useButtonType: <explanation> */
 /** biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> */
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 
 function NavBar() {

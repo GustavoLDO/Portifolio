@@ -20,6 +20,7 @@ function Contato() {
           console.log(result.text);
           setEnviado(true);
           form.current?.reset();
+          setTimeout(() => setEnviado(false), 4000);
       }, (error) => {
           console.log(error.text);
           alert("Erro ao enviar, tenta novamente.");

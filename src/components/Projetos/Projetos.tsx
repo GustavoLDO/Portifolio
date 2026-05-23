@@ -1,6 +1,6 @@
 /** biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> */
 /** biome-ignore-all lint/correctness/useUniqueElementIds: <explanation> */
-import React, { useState } from "react";
+import { useState } from "react";
 
 const meusProjetos = [
   {

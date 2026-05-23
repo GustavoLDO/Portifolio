@@ -1,5 +1,4 @@
 /** biome-ignore-all lint/correctness/useUniqueElementIds: <explanation> */
-import React from "react";
 import { NavHashLink } from "react-router-hash-link";
 import NavBar from "./NavBar/NavBar";
 import TimeLine from "./Sobre/TimeLine";

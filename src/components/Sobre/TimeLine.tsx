@@ -1,5 +1,4 @@
 /** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
-import React from "react";
 
 const timelineData = [
     {
@@ -43,14 +42,6 @@ function TimeLine() {
                             className={`mb-12 relative w-full sm:w-1/2 flex
                           ${index % 2 === 0 ? "sm:pr-10 sm:left-0 sm:justify-end" : "sm:pl-10 sm:left-1/2 sm:justify-start"}`}
                         >
-                            {/* Ponto de Conexão Menor */}
-                            <div
-                                className="absolute w-3 h-3 rounded-full bg-zinc-950 
-                            left-0 top-1/2 transform -translate-y-1/2 
-                            sm:left-1/2 sm:-translate-x-1/2 
-                            border border-cyan-400 z-10 shadow-[0_0_8px_rgba(34,211,238,0.4)]"
-                            ></div>
-
                             {/* Card com Fontes Reduzidas */}
                             <div
                                 className={`group relative p-5 rounded-xl bg-zinc-900/40 backdrop-blur-md 

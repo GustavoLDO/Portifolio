@@ -1,6 +1,6 @@
 /** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
 /** biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> */
-import React from "react";
+import { type ComponentType } from "react";
 import {
     SiHtml5, SiCss3, SiJavascript, SiPython, SiPhp, SiSpring, SiDjango,
     SiLaravel, SiReact, SiOracle, SiMysql, SiPostgresql,
@@ -28,7 +28,14 @@ const tecs = [
     { icon: SiLaravel, nome: "Laravel", categoria: "Back-end", cor: "cyan" },
 ];
 
-const SkillCard = ({ skill, icon: Icon, color, proficiency }) => {
+interface SkillCardProps {
+    skill: string;
+    icon: ComponentType<{ className?: string }>;
+    color: string;
+    proficiency: string;
+}
+
+const SkillCard = ({ skill, icon: Icon, color, proficiency }: SkillCardProps) => {
     const isPurple = color === 'purple';
     const iconColor = isPurple ? 'text-purple-500' : 'text-cyan-400';
     const badgeBg = isPurple ? 'bg-purple-500/10 text-purple-400 border-purple-500/20' : 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20';
