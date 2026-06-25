@@ -23,8 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore public assets not meant for repository
-public/
-
-# Ignore local asset files not meant for repository
-src/assets/
