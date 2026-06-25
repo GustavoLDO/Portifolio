@@ -77,7 +77,7 @@ function Home() {
                                     className="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-110"
                                 />
                             </div>
-
+                            
                             {/* Detalhe Inferior Roxo sutil */}
                             <div className="absolute bottom-1.5 right-3 w-8 h-8 border-b-2 border-r-2 border-purple-500/20 rounded-br-[1.5rem]"></div>
                         </div>
