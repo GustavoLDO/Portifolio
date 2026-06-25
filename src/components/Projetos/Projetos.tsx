@@ -51,7 +51,22 @@ const meusProjetos = [
     descricao: "Aplicação backend desenvolvida em Java com Spring Boot para gerenciamento de endereços.",
     tags: ["Spring Boot", "PostgreSQL"],
     link: "https://github.com/GustavoLDO/Banco-Spring-Boot.git",
+  },
+  {
+    id: 8,
+    nome: "Observatório do Zódiaco",
+    descricao: "Um santuário de dados. Repositório focado no armazenamento e exibição de dashboards interativos com a temática de Cavaleiros do Zodíaco.",
+    tags: ["Next.js", "JavaScript"],
+    link: "https://github.com/GustavoLDO/Observatorio-Zodiaco.git",
+  },
+  {
+    id: 9,
+    nome: "Automação de Invoices",
+    descricao: "Automação para geração, envio ou processamento de invoices (faturas). Desenvolvido para otimizar fluxos financeiros e reduzir processos manuais.",
+    tags: ["HTML", "JavaScript"],
+    link: "https://github.com/GustavoLDO/Automaticacao-Invoices.git",
   }
+
 ];
 
 function Projetos() {
